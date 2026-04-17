@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bcmnlq0bq753"]
+
+[ext_resource type="Script" uid="uid://c6kilh4ogryre" path="res://addons/mx_creative_console/main_panel.gd" id="1_script"]
+
+[node name="MainPanel" type="Control" unique_id=1739845665]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1855542370]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 183.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=288792907]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="Margin/VBox" unique_id=699093311]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "MX Creative Console (bridge)"
+
+[node name="Hint" type="Label" parent="Margin/VBox" unique_id=504300739]
+layout_mode = 2
+text = "Providers publish options from the current selection. context.json (schema 2) is the snapshot; append hardware events to events.json to apply toggles/ranges with undo."
+
+[node name="Status" type="Label" parent="Margin/VBox" unique_id=274089654]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Context: (loading…)"
+autowrap_mode = 3
+
+[node name="DefaultAction" type="Button" parent="Margin/VBox" unique_id=2052299776]
+layout_mode = 2
+text = "Default action"
+
+[node name="Node3DAction" type="Button" parent="Margin/VBox" unique_id=1150850680]
+visible = false
+layout_mode = 2
+text = "3D node action"
