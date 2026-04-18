@@ -1,4 +1,7 @@
-project.godot export-ignore
-.gitignore export-ignore
-/icon.svg export-ignore
-/icon.svg.import export-ignore
+# Normalize line endings for all files that Git considers text files.
+* text=auto eol=lf
+
+# Only include the addons folder when creating archives (git archive / some Asset Library flows).
+* export-ignore
+addons -export-ignore
+addons/** -export-ignore
