@@ -29,6 +29,7 @@ The integration is highly context-aware. Depending on what you are doing in Godo
 1. **Download this Godot Plugin:**
   Copy the `addons/mx_creative_console` folder into the `addons/` directory of your Godot 4.x project.
    *(Path should look like: `res://addons/mx_creative_console/plugin.gd`)*
+   Do not place it in `res://Plugins/` (or rename the `addons` folder): the addon resolves its scripts from the exact path above.
 2. **Enable the Plugin:**
   Open Godot. Go to **Project > Project Settings > Plugins** and check the "Enable" box next to **MX Creative Console**.
 3. **Install the Logitech C# SDK Plugin:**
